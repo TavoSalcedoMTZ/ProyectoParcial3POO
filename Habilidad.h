@@ -6,10 +6,11 @@
 #define PROYECTOPARCIAL3_HABILIDAD_H
 
 #include <iostream>
+#include <string>
 class Habilidad {
 public:
     Habilidad();
-    Habilidad(int costo);
+    Habilidad(std::string nombrehab,int costo,int distancia);
     virtual ~Habilidad();
 
     void setCosto(int costo);
@@ -17,7 +18,9 @@ public:
 
     virtual void usarHabilidad();
 private:
+    std::string nombrehab;
     int costo;
+    int distancia;
 };
 
 

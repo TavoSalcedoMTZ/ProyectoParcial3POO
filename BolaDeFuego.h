@@ -9,7 +9,7 @@
 class BolaDeFuego :public Habilidad{
 public:
     BolaDeFuego();
-    BolaDeFuego(int costo,int danohab);
+    BolaDeFuego(std::string nombrehab, int costo, int distancia, int danohab);
     ~BolaDeFuego() override;
 
 

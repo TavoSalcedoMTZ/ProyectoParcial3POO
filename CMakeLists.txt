@@ -3,4 +3,24 @@ project(ProyectoParcial3)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(ProyectoParcial3 main.cpp Entidad.cpp Entidad.h Personaje.cpp Personaje.h Enemigo.cpp Enemigo.h Habilidad.cpp Habilidad.h BolaDeFuego.cpp BolaDeFuego.h)
+add_executable(ProyectoParcial3
+        main.cpp
+        Entidad.cpp
+        Entidad.h
+        Personaje.cpp
+        Personaje.h
+        Enemigo.cpp
+        Enemigo.h
+        Habilidad.cpp
+        Habilidad.h
+        BolaDeFuego.cpp
+        BolaDeFuego.h
+        Curar.cpp
+        Curar.h
+        Jugador.cpp
+        Jugador.h
+        Inventario.cpp
+        Inventario.h
+        Inventario.h
+        item.cpp
+        item.h)

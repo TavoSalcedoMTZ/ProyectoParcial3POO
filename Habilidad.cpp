@@ -1,10 +1,14 @@
 #include "Habilidad.h"
 Habilidad::Habilidad() {
-    costo=costo;
+    nombrehab="";
+    costo=0;
+    distancia=0;
 }
 
-Habilidad::Habilidad(int costo) {
+Habilidad::Habilidad(std::string nombrehab, int costo, int distancia) {
+    this->nombrehab=nombrehab;
     this->costo=costo;
+    this->distancia=distancia;
 }
 
 Habilidad::~Habilidad() {

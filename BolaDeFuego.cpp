@@ -1,9 +1,11 @@
 
 #include "BolaDeFuego.h"
 
-BolaDeFuego::BolaDeFuego() {}
+BolaDeFuego::BolaDeFuego():Habilidad() {
+    danohab=0;
+}
 
-BolaDeFuego::BolaDeFuego(int costo, int danohab) {
+BolaDeFuego::BolaDeFuego(std::string nombrehab, int costo, int distancia, int danohab):Habilidad(nombrehab,costo,distancia) {
     this->danohab=danohab;
 }
 
