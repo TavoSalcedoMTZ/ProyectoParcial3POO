@@ -4,12 +4,12 @@
 
 #include "Personaje.h"
 
-Personaje::Personaje() {
+Personaje::Personaje():Entidad() {
     dano=0;
     mana=0;
 }
 
-Personaje::Personaje(std::string name, int salud, int dano, int mana) {
+Personaje::Personaje(std::string name, int salud, int dano, int mana):Entidad(name,salud) {
     this->dano=dano;
     this->mana=mana;
 }

@@ -7,7 +7,7 @@
 
 #include "Entidad.h"
 
-class Personaje:Entidad {
+class Personaje: public Entidad {
 public:
     Personaje();
     Personaje(std::string name, int salud,int dano,int mana);

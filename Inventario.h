@@ -13,7 +13,7 @@ public:
     Inventario();
     ~Inventario();
 void agregarItem(item* items);
-void mostrar() ;
+void mostrar();
 void borraritem(item* items);
 
 private:

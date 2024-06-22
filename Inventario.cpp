@@ -16,7 +16,7 @@ void Inventario::agregarItem(item *items) {
 
 void Inventario::mostrar()  {
     for(item* items:Obj){
-        items->usar();
+        std::cout<<items<<""<<std::endl<<std::endl;
     }
 }
 

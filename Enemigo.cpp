@@ -4,12 +4,12 @@
 
 #include "Enemigo.h"
 
-Enemigo::Enemigo() {
+Enemigo::Enemigo():Entidad() {
     dano=0;
     armadura=0;
 }
 
-Enemigo::Enemigo(std::string name, int salud, int dano, int armadura) {
+Enemigo::Enemigo(std::string name, int salud, int dano, int armadura):Entidad(name,salud) {
     this->dano=dano;
     this->armadura=armadura;
 }
@@ -29,6 +29,6 @@ int Enemigo::getArmor() {
     return armadura;
 }
 void Enemigo::mostrarInfo() {
-    std::cout << "Nombre= " << getName() << std::endl << "Salud= " << getSalud() << std::endl << "Dano" << std::endl
-              << getDano() << std::endl << "Armadura" << getArmor() << std::endl;
+    std::cout << "Nombre= " << getName() << std::endl << "Salud= " << getSalud() << std::endl << "Dano=" <<
+              getDano() << std::endl << "Armadura=" << getArmor() << std::endl;
 }

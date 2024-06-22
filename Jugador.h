@@ -11,18 +11,17 @@
 #include <vector>
 #include <algorithm>
 #include "Inventario.h"
-class Jugador: public Personaje, public BolaDeFuego, public Curar, public Inventario {
+class Jugador: public Personaje, public BolaDeFuego, public Curar, public Inventario{
 public:
     Jugador();
     Jugador(std::string name,int salud,int dano, int mana);
     ~Jugador() override;
 
-    void mostrarInfo() ;
+    void mostrarInfo();
 
     void usarHabilidad(std::string habilidad) ;
 
     void agregarHabilidad(std::string habilidad);
-    void mostrar() const;
 private:
 std::vector<std::string> ObjHabilidad;
 
